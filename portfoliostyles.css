@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a { 
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: 'Montserrat', san-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.content-desktop {display: block;}
+.content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+	.content-desktop {display: none;}
+	.content-mobile {display: block;}
+}
+
+.current  {
+	background: none;
+	border: none;
+	padding: none;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 22px;
+	text-decoration: underline;
+	-webkit-text-decoration: underline;
+	-moz-text-decoration: underline;
+}
+
+.email {
+	color: white;
+	text-decoration: underline;
+ 	text-decoration-color: transparent;
+ 	transition: 0.5s;
+	/*add those for opera and mozilla support*/
+ 	-webkit-text-decoration-color: transparent;
+ 	-moz-text-decoration-color: transparent;
+}
+
+.email:hover {
+	color: white;
+	text-decoration: underline;
+	-webkit-text-decoration: underline;
+	-moz-text-decoration: underline;
+	transition-property: text-decoration;
+	cursor: pointer;
+	/*add those for opera and mozilla support*/
+	-webkit-transition-property: text-decoration;
+	-moz-transition-property: text-decoration;
+}
+
+.fa {
+  padding: 25px;
+  font-size: 5px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: none;
+  color: white;
+}
+
+.font_awesome {
+	font-family: Font Awesome 5 Free;
+	content: '\f077';
+	font-weight: 400;
+}
+
+.icon {
+	border: solid;
+	border-color: black;
+	border-width: 1px;
+	border-radius: 25%;
+	padding: 8px;
+	transition: 0.5s;
+	transition-property: border-color;
+}
+
+.icon:hover {
+	border: solid;
+	border-width: 1px;
+	border-radius: 25%;
+	border-image-width: 20px;
+	border-color: white;
+	cursor: pointer;
+}
+
+.gallery1 {
+	
+}
+
+.large {
+	font-size: 60px;
+}
+
+.medium {
+	font-size: 30px;
+}
+
+.small {
+	font-size: 10px;
+}
+
+.subbutton {
+	background: none;
+	border: none;
+	padding: none;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 22px;
+	text-decoration: underline;
+ 	text-decoration-color: transparent;
+ 	transition: 0.5s;
+	/*add those for opera and mozilla support*/
+ 	-webkit-text-decoration-color: transparent;
+ 	-moz-text-decoration-color: transparent;
+}
+
+.subbutton:hover {
+	text-decoration: underline;
+	transition-property: text-decoration;
+	cursor: pointer;
+	/*add those for opera and mozilla support*/
+	-webkit-text-decoration: underline;
+	-webkit-transition-property: text-decoration;
+ 	-moz-text-decoration: underline;
+	-moz-transition-property: text-decoration;
+}
+
+.subbutton:active {
+	text-decoration: underline;
+	-webkit-text-decoration: underline;
+	-moz-text-decoration: underline;
+}
+
+#button {
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-family: "Montserrat", san-serif;
+	font-weight: 100;
+}
+
+#text {
+	font-size: 14px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/*Lightbox**/
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+	object-fit: scale-down;
+	padding: 3px;
+}
+
+#mkLightboxContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mkLightboxContainer > * {
+    z-index: 99;
+}
+
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.85);
+    z-index: 0;
+}
+
+#mkLightboxContainer #mklbInner {
+    position: relative;
+    height: 100vh;
+    margin-left: 0;
+}
+
+section.imageContainer {
+    margin: 0;
+    padding: 1em;
+    box-sizing: border-box;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+#mkLightboxContainer img,
+#mkLightboxContainer video {
+    background: #fff;
+    box-shadow: 0 0 30px #222;
+    max-height: 85vh;
+    min-width: auto;
+    max-width: 75vw;
+    width: auto;
+    height: auto;
+}
+
+#mkLightboxContainer #yt-video {
+    width: 75vw;
+    height: 42.1875vw; /* 75*9/16 */
+}
+
+.mklbItem:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+#closeIconContainer {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+	opacity: 50%;
+    top: 30px;
+    right: 30px;
+    transition: 0.4s;
+}
+
+#closeIconContainer:hover {
+    cursor: pointer;
+	opacity: 100%;
+}
+
+#closeIconContainer svg,
+#prev svg,
+#next svg,
+#stopGallery svg, 
+#playGallery svg{
+    fill: white;
+}
+
+#prevContainer,
+#nextContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    padding: 10px 5px 10px 5px;
+	margin-left: 30px;
+	margin-right: 30px;
+    display: flex;
+	opacity: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+}
+
+#nextContainer {
+    left: auto;
+    right: 0;
+}
+
+#prevContainer:hover,
+#nextContainer:hover {
+    cursor: pointer;
+	opacity: 100%;
+}
+
+#prev,
+#next {
+    width: 35px;
+    height: 35px;
+}
+
+.grid {
+    display: grid;
+    align-content: flex-start;
+    grid-gap: 1em;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid figure {
+    width: 100%;
+    margin: 0;
+}
+
+.grid img {
+    width: 100%;
+}
+
+#controlContainer {
+    position: absolute;
+    top: 1em;
+    left: .5em;
+    display: flex;
+}
+
+#controlContainer > div {
+    width: 2em;
+}
+
+#controlContainer > div:hover {
+    cursor: pointer;
+}
+
+#controlContainer #stopGallery,
+#controlContainer.stop #playGallery{
+    opacity: 0.5;
+}
+
+#controlContainer.stop #stopGallery,
+#controlContainer #playGallery{
+    opacity: 1
+}
+
+@media screen and (max-width: 768px){
+    .grid-2-sm {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+	.grid-12-xs {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 450px){
+    .grid-12-xs {
+        grid-template-columns: 1fr;
+    }
+}
