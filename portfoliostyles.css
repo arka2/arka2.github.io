@@ -17,10 +17,18 @@ body {
 
 .content-desktop {display: block;}
 .content-mobile {display: none;}
+.content-large-desktop {display: none;}
 
 @media screen and (max-width: 768px) {
 	.content-desktop {display: none;}
 	.content-mobile {display: block;}
+	.content-large-desktop {display: none;}
+}
+
+@media screen and (min-width: 1920px) {
+	.content-desktop {display: none;}
+	.content-mobile {display: none;}
+	.content-large-desktop {display: block;}
 }
 
 .current  {
