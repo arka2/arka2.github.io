@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@font-face {
+	font-family: Montserrat;
+	src: url("static/Montserrat/Montserrat-Thin.ttf")
+}
+
 a { 
     text-decoration: none;
     outline: none;
@@ -13,6 +18,7 @@ body {
 	font-family: 'Montserrat', san-serif;
 	font-style: normal;
 	font-weight: 300;
+	-webkit-transform: translate3d(0, 0, 0);
 }
 
 .content-desktop {display: block;}
@@ -145,7 +151,8 @@ body {
  	text-decoration-color: transparent;
  	transition: 0.5s;
 	/*add those for opera and mozilla support*/
- 	-webkit-text-decoration-color: transparent;
+	-webkit-backface-visibility: hidden;
+	-webkit-text-decoration-color: black;
  	-moz-text-decoration-color: transparent;
 }
 
@@ -154,6 +161,7 @@ body {
 	transition-property: text-decoration;
 	cursor: pointer;
 	/*add those for opera and mozilla support*/
+	-webkit-backface-visibility: hidden;
 	-webkit-text-decoration: underline;
 	-webkit-transition-property: text-decoration;
  	-moz-text-decoration: underline;
