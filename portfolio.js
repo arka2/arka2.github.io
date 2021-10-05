@@ -55,8 +55,6 @@ function listen() {
 		document.body.appendChild(lightboxContainer);
 		overlay.addEventListener('click', _closeLightbox)
 		
-		
-		
 	}
 
 	function _mklbAddImage(item) {
@@ -110,7 +108,7 @@ function listen() {
 				imageContainer.className = 'imageContainer';
 				imageContainer.appendChild(_mklbAddImage(mklbItems[i]));
 				mklbInner.appendChild(imageContainer);
-			}
+			};
 		}
 
 		mklbInner.style.marginLeft = (index-1) * (-100) + 'vw';
