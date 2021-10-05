@@ -31,7 +31,7 @@ body {
 	.content-large-desktop {display: none;}
 }
 
-@media screen and (min-width: 2400px) {
+@media screen and (min-width: 1140px) {
 	.content-desktop {display: none;}
 	.content-mobile {display: none;}
 	.content-large-desktop {display: block;}
