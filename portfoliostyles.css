@@ -57,6 +57,13 @@ body {
 	-moz-text-decoration: underline;
 }
 
+.desktop-row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding-bottom: 7px;
+}
+
 .email {
 	color: white;
 	text-decoration: underline;
