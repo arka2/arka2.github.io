@@ -27,20 +27,12 @@ body {
 @media screen and (max-width: 768px) {
 	.content-desktop {display: none;}
 	.content-mobile {display: block;}
-	.content-large-desktop {display: none;}
 }
 
  /*--cover up mac , mac-book---*/
-@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+@media only screen and (min-width: 1024px) {
 	.content-desktop {display: block;}
 	.content-mobile {display: none;}
-	.content-large-desktop {display: none;}
-}
-
-@media only screen and (min-width: 1920px) and (max-width: 2560px) {
-	.content-desktop {display: none;}
-	.content-mobile {display: none;}
-	.content-large-desktop {display: block;}
 }
 
 .current  {
