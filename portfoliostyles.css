@@ -7,8 +7,31 @@
 }
 
 a { 
-    text-decoration: none;
-    outline: none;
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-family: "Montserrat", san-serif;
+	font-weight: 100;
+	font-size: 22px;
+	text-decoration: underline;
+	text-decoration-color: transparent;
+	transition: 0.5s;
+   /*add those for opera and mozilla support*/
+   -webkit-backface-visibility: hidden;
+   -webkit-text-decoration-color: black;
+	-moz-text-decoration-color: transparent;
+}
+
+a:hover {
+	text-decoration: underline;
+	transition-property: text-decoration;
+	cursor: pointer;
+	/*add those for opera and mozilla support*/
+	-webkit-backface-visibility: hidden;
+	-webkit-text-decoration: underline;
+	-webkit-transition-property: text-decoration;
+ 	-moz-text-decoration: underline;
+	-moz-transition-property: text-decoration;
 }
 
 body {
