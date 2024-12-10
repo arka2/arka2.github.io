@@ -166,6 +166,12 @@ body {
 	font-weight: 300;
 }
 
+.midContainer {
+	padding-left: 25%;
+	width: 50%;
+	padding-right: 25%;
+}
+
 .subbutton {
 	background: none;
 	border: none;
@@ -210,10 +216,11 @@ body {
 	font-weight: 100;
 }
 
-#text {
+.text {
 	font-size: 14px;
 	padding-top: 20px;
 	padding-bottom: 10px;
+	text-align: left;
 }
 
 /*Lightbox**/
